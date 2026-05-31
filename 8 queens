@@ -33,9 +33,8 @@ def solve(board, row, n):
             board[row][col] = 1
             solve(board, row + 1, n)
             board[row][col] = 0
-
-O/p: Final position of queens are 0, 4, 7, 5, 2, 6, 1, 3
-
 n = 8
 board = [[0] * n for _ in range(n)]
 solve(board, 0, n)
+
+O/p: Final position of queens are 0, 4, 7, 5, 2, 6, 1, 3
