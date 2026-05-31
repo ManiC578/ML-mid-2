@@ -16,7 +16,6 @@ def heuristic(path):
                if i != current)
 
 pq = [(0, 0, [0])]   # (f, cost, path)
-
 while pq:
     f, cost, path = heapq.heappop(pq)
     city = path[-1]
